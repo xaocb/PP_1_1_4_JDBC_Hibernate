@@ -1,7 +1,10 @@
 package jm.task.core.jdbc;
 
+import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.service.UserService;
 import jm.task.core.jdbc.service.UserServiceImpl;
+
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,4 +19,10 @@ public class Main {
         userService.removeUserById(4);
         System.out.println(userService.getAllUsers());
     }
+
+    static List<? super Integer> numbers(){
+        User user = new User();
+        return List.of(user);
+    }
+
 }
